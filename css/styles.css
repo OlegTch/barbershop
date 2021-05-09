@@ -1,0 +1,31 @@
+.container {
+  width: 1920px;
+  margin: 0 auto;
+  border: 1px solid;
+  /* outline: 2px solid tomato; */
+}
+
+/* .item-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+} */
+
+.site-nav-list, .user-menu {
+  display: flex;
+}
+
+.site-nav-list a {
+  padding: 67px 14px 8px 14px;
+}
+
+.site-nav-list li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.site-nav-list a:hover,
+.site-nav-list a:focus {
+    background: aqua; 
+}
+
+ 
