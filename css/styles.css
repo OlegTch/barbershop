@@ -37,13 +37,15 @@ body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
   font-family: Catamaran, sans-serif;
-  letter-spacing:  0.03em;
+  font-size: 25px;
+  line-height: 1.52;
+  letter-spacing: 0.03em; 
 }
 
 .container {
   width: 1920px;
   margin: 0 auto;
-  border: 1px solid;
+  /* border: 1px solid; */
   /* outline: 2px solid tomato; */
 }
 
@@ -137,6 +139,8 @@ text-transform: capitalize;
   text-align: center;
   padding-top: 23px;
   padding-bottom: 23px;
+  padding-right: 41px;
+  padding-left: 41px;
   border-radius: 20px;  
   border: 0;
   background: var(--accent-color);
@@ -145,7 +149,6 @@ text-transform: capitalize;
   font-weight: 700;
 font-size: 20px;
 line-height: 1.5;
-letter-spacing: 0.03em;
 }
 
 /*========== Анимация ==========*/
@@ -243,4 +246,121 @@ letter-spacing: 0.03em;
   color: var(--accent-title-text-color);
 }
 
+.hero-section > .container {
+  background-image: url(../images/image-1.svg);
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  padding-top: 161px;
+  padding-bottom: 153px;
+  padding-left: 188px;
+  padding-right: 1156px;
+}
+
+.hero-title {
+  margin-bottom: 29px;
+font-weight: 700;
+font-size: 75px;
+line-height: 1.336;
+color: var(--title-text-color);
+}
+
+.hero-text {
+margin-bottom: 97px;
+opacity: 0.65;
+}
+
 /*========== END HERO ==========*/
+
+/*========== НАША ИСТОРИЯ ==========*/
+.section-title {
+  margin-bottom: 80px;
+  font-weight: 700;
+font-size: 70px;
+line-height: 1.50;
+color: var(--title-text-color);
+}
+
+.history-section > .container{
+  background: 
+  url(../images/top-left.svg) left top,
+  url(../images/top-right.svg) right top,
+    url(../images/image-2.svg) left center;
+background-repeat: no-repeat;
+/* background-position-x: 0;
+background-position-y: center; */
+padding-top: 288px;
+  padding-bottom: 334px;
+  padding-left: 1199px;
+  padding-right: 195px;
+  
+}
+
+.history li:not(:last-child)
+{
+  margin-bottom: 48px;
+}
+
+.history-text {
+  margin-bottom: 108px;
+}
+
+/*========== END НАША ИСТОРИЯ ==========*/
+
+/*========== УСЛУГИ ==========*/
+.services-section > .container{
+background: 
+url(../images/bottom-left.svg) left bottom,
+  url(../images/bottom-right.svg) right bottom;
+  background-repeat: no-repeat;
+
+  padding-top: 288px;
+margin-left: 249px;
+margin-right: 254px;
+}
+
+.services-section .section-title {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.service-icon {
+display: flex;
+justify-content: space-between;
+}
+
+.icon-item {
+   width: 441px;
+  background: #FAFBFF;
+box-shadow: 0px 5px 0px #99BAED;
+border-radius: 29px;
+}
+
+.icon-item:hover {
+  background: #99BAED;
+  color: #FFFFFF;
+}
+
+.icon-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 103px;
+  height: 126px;
+  background: #E5ECFE;
+box-shadow: 0px 1px 0px #008FDD;
+border-radius: 13px;
+margin: 0 auto;
+}
+
+.title-services {
+  margin: 60px auto;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 1.166;
+  text-align: center;   
+  color: var(--title-text-color);
+}
+
+
+/*========== END УСЛУГИ ==========*/
+
