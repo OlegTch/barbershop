@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color barber</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <title>Document</title>
     <link href="./css/modern-normalize.css" rel="stylesheet">
     <link href="./css/styles.css" rel="stylesheet">
 </head>
@@ -15,10 +15,11 @@
 
     <!--header-->
     <header class="header">
-        <div class="container">
-        <div class="logo">
-            <img src="./images/scissors.svg" alt="ножницы">arber
-            </div>
+        <div class="container header-container">
+        <p class="logo">
+            <!-- <img src="./images/scissors.svg" alt="ножницы"> -->
+            arber
+            </p>
 
             <nav class="navigation">
                <ul class="site-nav-list">
@@ -37,34 +38,153 @@
                 </ul>
             </nav>
             <ul class="user-menu"> 
-                <li><button type="button"><img src="./images/profile-1.svg" alt="profile"></button></li>
-                <li><button type="button"><img src="./images/notification-1.svg" alt="notification"></button></li>
-                <li><button type="button" class="button primery"> Appointment </button></li> 
+                <li>
+                    <button  class="button-link" type="button">
+                        <img src="./images/profile-1.svg" alt="profile">
+                    </button>
+                </li>
+                <li>
+                    <button class="button-link" type="button">
+                        <img src="./images/notification-1.svg" alt="notification">
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="button primery-button"> Appointment </button>
+                </li> 
             </ul>
         </div>
     </header>
 
-    <!-- hero -->
+    <main>
 
-    <hero>
+        <!-- hero -->
 
-    </hero>
-        <div class="container">
-            <h1><span class="accent">Hairstyle</span>ReflectsThe PersonalityInside You</h1>
-            <p class="text">It is a long established fact that a reader will be distracted by the readable content of a page w
-            hen looking at.</p>
-        </div>
-        <img src="./images/image-1.jpg" alt="барбер бреет бороду клиенту">
-    </section>
+        <hero>
+            <div class="container">
+                <div class="">
+                    <h1><span class="accent">Hairstyle</span>ReflectsThe PersonalityInside You</h1>
+                    <p class="text">It is a long established fact that a reader will be distracted by the readable content of a page w
+                    hen looking at.</p>
+                    <button type="button" class="button herro-button"> Get Started </button>
+                </div> 
+                <img src="./images/image-1.jpg" alt="барбер бреет бороду клиенту"  width="1234px" height="821px" >
+            </div>
+        </hero>
+                
+        <!-- Наша история -->
+        <section class="section">
+            <div class="container">
+                <div class="">
+                    <h2> Our <span class="accent">History</span></h2>
+                    <p class="text">It is a long established fact that a reader will be  distracted by the readable content of a page w
+                        hen looking at.</p>
+                    <p class="text">It is a long established fact that a reader will be  distracted by the readable content of a page w
+                        hen looking at.</p>
+                    <button type="button" class="button container-button"> Learn more </button>
+                </div> 
+                <img src="./images/image-2.jpg" alt="барберы с большим инструментом" width="968px" height="968px">  
+            </div>
+        </section>
 
-    <section class="section">
-        <div class="container">
-
-
+        <!-- Услуги -->
+        <section class="section">
+            <div class="container">
+                <h2>Services We<span class="accent">Provide</span></h2>
+                <ul>
+                    <li> 
+                        <a href="" class="">
+                            <svg class="">
+                                <use href="../images/group-1.svg"></use>
+                            </svg>
+                            <h3 class="">Hair Cut</h3>
+                            <p class="">long established fact that a re acted by the readable content of
+                                hen looking at.</p>
+                        </a>
+                    </li>
+                    <li> 
+                        <a href="" class="">
+                            <svg class="">
+                                <use href="/images/electric-razor-1.svg"></use>
+                            </svg>
+                            <h3 class="">Beard Cut</h3>
+                            <p class="">long established fact that a re acted by the readable content of
+                                hen looking at.</p>
+                        </a>
+                    </li>
+                    <li> 
+                        <a href="" class="">
+                            <svg class="">
+                                <use href="/images/cleanser-1.svg"></use>
+                            </svg>
+                            <h3 class="">Facial Pack</h3>
+                            <p class="">long established fact that a re acted by the readable content of
+                                hen looking at.</p>
+                        </a>
+                    </li>
+                </ul>
 
             </div>
-    </section>
-</main>
+        </section>
+
+        <!-- Галерея -->
+        <section class="section">
+            <div class="container">
+                <h2>Our<span class="accent">Gallery</span></h2>
+                <ul>
+                    <li>
+                        <img src="" alt="">
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                    </li>
+                </ul>
+                <button type="button" class="button gallery-button"> View All </button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="logo">arber</p>
+            <p class="">It is a long established fact that a reader will be distracted by the readable </p>
+            <ul>
+                <li class="social-list">
+                    <a class="link social-link" href=""> 
+                        <svg class="social-icon icon" width="67px" height="67px">
+                            <use href="./images/icons.svg#icon-facebook"></use> 
+                        </svg> 
+                    </a>
+                </li>
+                <li class="social-list">
+                    <a class="link social-link" href="">
+                        <svg class="social-icon icon" width="67px" height="67px">
+                            <use href="./images/icons.svg#icon-twitter"></use> 
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-list">
+                    <a class="link social-link" href="">
+                        <svg class="social-icon icon" width="67px" height="67px">
+                            <use href="./images/icons.svg#icon-google"></use> 
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </footer>
     
 
 </body>

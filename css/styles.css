@@ -1,3 +1,45 @@
+:root {
+  --primary-text-color: #153461;
+  --title-text-color: #163561;
+  --accent-color: #99BAED;
+  --accent-title-text-color: #FBB400;
+  --primary-bg-color: #FFFFFF;
+  --link-color: #A3C1EF;
+
+
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+img {
+  display: block;
+}
+
+body {
+  margin: 0;
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+  font-family: Catamaran, sans-serif;
+  letter-spacing:  0.03em;
+}
+
 .container {
   width: 1920px;
   margin: 0 auto;
@@ -11,12 +53,54 @@
   list-style: none;
 } */
 
-.site-nav-list, .user-menu {
+
+/*========== HEADER ==========*/
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-left: 170px;
+  padding-right: 213px;
+}
+
+.logo {
+  /* display: flex; */
+  margin-top: 59px;
+  margin-right: 110px; 
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.336;
+    
+  color: var(--accent-color);
+  position: relative;
+}
+
+.logo::before {
+  position: absolute;
+  content: '';
+  width: 74px;
+  height: 66px;
+  bottom: 12px;
+  left: -52px;
+
+  background-image: url(../images/scissors-1.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  fill: currentColor; 
+}
+
+.site-nav-list {
   display: flex;
 }
 
 .site-nav-list a {
   padding: 67px 14px 8px 14px;
+  font-weight: 500;
+font-size: 25px;
+line-height: 1.336;
+text-transform: capitalize;
 }
 
 .site-nav-list li:not(:last-child) {
@@ -25,7 +109,138 @@
 
 .site-nav-list a:hover,
 .site-nav-list a:focus {
-    background: aqua; 
+    background: var(--link-color); 
+    color:  var(--primary-bg-color);
+    border-radius: 5px;
+  transition: all 0.5s ease-out;
 }
 
+.user-menu {
+  display: flex;
+  align-items: center;
+  padding-top: 46px;
+}
+
+.user-menu li:not(:last-child) {
+  margin-right: 72px;
+}
+
+.button-link {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.button {
+  font-family: inherit; /*кнопка унаследует свойства*/
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  border-radius: 20px;  
+  border: 0;
+  background: var(--accent-color);
+  color: var(--primary-bg-color);
+
+  font-weight: 700;
+font-size: 20px;
+line-height: 1.5;
+letter-spacing: 0.03em;
+}
+
+/*========== Анимация ==========*/
+.primery-button {
+  animation: animate125 3000ms infinite 1000ms;
+  transform: scale(1.15); }
+
+ @keyframes animate125 {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.25);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+ }
+ @keyframes animate126 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  12.5% {
+    transform: rotate(-45deg);
+  }
+
+  25% {
+    transform: rotate(-90deg);
+  }
+
+  37.5% {
+    transform: rotate(-135deg);
+  }
+
+  50% {
+    transform: rotate(-180deg);
+  }
+  62.5% {
+    transform: rotate(-225deg);
+  }
+  75% {
+    transform: rotate(-270deg);
+  }
+  87.5% {
+    transform: rotate(-315deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes animate127 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(30deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.button-link {
+  animation: animate126 3000ms infinite 1000ms;
+}
+
+.logo::before {
+  animation: animate127 3000ms infinite 1000ms;
+}
+
+/*========== end Анимация  ==========*/
+
+.primery-button {
+  padding-right: 33px;
+  padding-left: 33px;
+}
+
+.button:hover,
+.button:focus {
+  box-shadow: 0 10px 50px var(--accent-color);
+  transition: all 0.5s ease-out;
+}
  
+/*========== END HEADER ==========*/
+
+/*========== HERO ==========*/
+
+.accent {
+  color: var(--accent-title-text-color);
+}
+
+/*========== END HERO ==========*/
