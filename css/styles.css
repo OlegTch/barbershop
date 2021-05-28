@@ -22,7 +22,7 @@ ol {
 }
 
 .list {
-  list-style: none;
+  list-style: none;  
 }
 
 .link {
@@ -36,7 +36,7 @@ body {
   margin: 0;
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
-  font-family: Catamaran, sans-serif;
+  font-family: 'Catamaran', sans-serif;
   font-size: 25px;
   line-height: 1.52;
   letter-spacing: 0.03em; 
@@ -70,6 +70,7 @@ body {
   /* display: flex; */
   margin-top: 59px;
   margin-right: 110px; 
+  margin-left: 41px; /* ? */
   font-weight: 600;
   font-size: 40px;
   line-height: 1.336;
@@ -86,7 +87,7 @@ body {
   bottom: 12px;
   left: -52px;
 
-  background-image: url(../images/scissors-1.svg);
+  background-image: url(../images/scissors-logo.svg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -127,9 +128,15 @@ text-transform: capitalize;
   margin-right: 72px;
 }
 
+.button-list {
+  width: 44px; height: 44px;  /* */
+}
+
 .button-link {
   display: inline-block;
   cursor: pointer;
+  border: none;
+  background-color:  transparent;
 }
 
 .button {
@@ -152,7 +159,7 @@ line-height: 1.5;
 }
 
 /*========== Анимация ==========*/
-.primery-button {
+/* .primery-button {
   animation: animate125 3000ms infinite 1000ms;
   transform: scale(1.15); }
 
@@ -201,9 +208,9 @@ line-height: 1.5;
   100% {
     transform: rotate(-360deg);
   }
-}
+} */
 
-@keyframes animate127 {
+@keyframes animatelogo {
   0% {
     transform: rotate(0deg);
   }
@@ -217,20 +224,20 @@ line-height: 1.5;
   }
 }
 
-.button-link {
+/* .button-link {
   animation: animate126 3000ms infinite 1000ms;
-}
+} */
 
 .logo::before {
-  animation: animate127 3000ms infinite 1000ms;
+  animation: animatelogo 3000ms infinite 250ms;
 }
 
 /*========== end Анимация  ==========*/
 
-.primery-button {
+/* .primery-button {
   padding-right: 33px;
   padding-left: 33px;
-}
+} */
 
 .button:hover,
 .button:focus {
@@ -313,13 +320,14 @@ url(../images/bottom-left.svg) left bottom,
   url(../images/bottom-right.svg) right bottom;
   background-repeat: no-repeat;
 
-  padding-top: 288px;
-margin-left: 249px;
-margin-right: 254px;
+  padding-top: 136px; /* padding-top: 288px; */
+padding-left: 249px;
+padding-right: 254px;
+padding-bottom: 136px;
 }
 
 .services-section .section-title {
-  margin: 0 auto;
+  margin: 0 auto 83px;
   text-align: center;
 }
 
@@ -328,8 +336,9 @@ display: flex;
 justify-content: space-between;
 }
 
-.icon-item {
+.icon-item {  
    width: 441px;
+   padding: 50px 41px 72px;
   background: #FAFBFF;
 box-shadow: 0px 5px 0px #99BAED;
 border-radius: 29px;
@@ -338,6 +347,13 @@ border-radius: 29px;
 .icon-item:hover {
   background: #99BAED;
   color: #FFFFFF;
+  /* box-shadow: 0 5px 0 #99BAED; */  
+}
+
+.icon-item:hover .title-services,
+.icon-item:hover .servise-text {
+  color: #FFFFFF;
+  opacity: 1;
 }
 
 .icon-svg {
@@ -361,6 +377,30 @@ margin: 0 auto;
   color: var(--title-text-color);
 }
 
+.servise-text {
+  opacity: 0.65;
+}
+
 
 /*========== END УСЛУГИ ==========*/
 
+
+.gallery-section .section-title {
+  margin: 0 auto 110px;
+  text-align: center;   
+}
+
+.gallery-section-list {
+  display: flex;
+  flex-wrap: wrap;  
+  margin-left: calc(-1 * 37px);
+  margin-bottom: calc(-1 * 37px);
+
+}
+.gallery-list {  
+  flex-basis: calc(100% / 3 - 37px);  
+  margin-left: 37px;
+  margin-bottom: 37px;
+  width: 435px;
+  height: 435px;
+}
